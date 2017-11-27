@@ -1,0 +1,99 @@
+.contacts {
+  background: #f7f9fb;
+  &__wrapper {
+    display: flex;
+
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+  &__left {
+    padding-top: 80px;
+    padding-right: 60px;
+  }
+  &__right {
+    img {
+      display: block;
+    }
+  }
+  &__title {
+    color: $dark-blue;
+
+    font-family: "Lato-Light";
+    font-size: rem-calc(44);
+    line-height: 1;
+    span {
+      position: relative;
+      top: -20px;
+
+      display: block;
+
+      font-family: "Lato-Black";
+      font-size: rem-calc(69);
+      line-height: 1;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 35px;
+
+    color: #2a2a2a;
+
+    font-size: rem-calc(20);
+  }
+
+  &__row {
+    position: relative;
+
+    margin-top: 30px;
+    padding-left: 70px;
+
+    color: #2a2a2a;
+
+    font-size: rem-calc(16);
+    span {
+      display: block;
+
+      color: $light-blue;
+
+      font-family: "Lato-Bold";
+      font-size: rem-calc(23);
+      line-height: 1;
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: "";
+
+      @include vertical-center;
+    }
+    &._phone {
+      &:before {
+        @include bg($phone);
+      }
+    }
+    &._mail {
+      span {
+        margin-top: 5px;
+
+        font-size: rem-calc(16);
+      }
+      &:before {
+        @include bg($mail);
+      }
+    }
+    &._address {
+      span {
+        margin-top: 5px;
+
+        color: #2a2a2a;
+
+        font-size: rem-calc(16);
+      }
+      &:before {
+        left: 8px;
+
+        @include bg($place);
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.top-baner {
+  position: relative;
+
+  min-height: 700px;
+
+  background: url(%=static=%general/top-baner.jpg) no-repeat;
+  background-size: cover;
+  &:after {
+    bottom: 40px;
+
+    content: "";
+
+    @include horizontal-center;
+    @include bg($mouse);
+  }
+  &__wrapper {
+    @include absolute-center;
+  }
+  &__title {
+    text-transform: uppercase;
+
+    color: $white;
+
+    font-family: "Lato-Black";
+    font-size: rem-calc(63);
+    line-height: 1;
+    &:before {
+      position: absolute;
+      top: -42px;
+      left: -48px;
+
+      width: 283px;
+      height: 283px;
+
+      content: "";
+
+      background: url(%=static=%general/rect.png) no-repeat;
+    }
+  }
+  &__caption {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+
+    color: $white;
+
+    font-size: rem-calc(14);
+    line-height: rem-calc(19);
+  }
+}

@@ -1,0 +1,24 @@
+.footer {
+  padding: 35px 0;
+
+  background: #213052;
+  &__wrapper {
+    display: flex;
+
+    align-items: center;
+    @extend .wrapper;
+    justify-content: space-between;
+  }
+  &__logo {
+    @include bg($logo);
+  }
+  &__copyright {
+    max-width: 70%;
+    padding-top: 10px;
+
+    color: rgba($white, .7);
+    span {
+      color: rgba($white, .5);
+    }
+  }
+}

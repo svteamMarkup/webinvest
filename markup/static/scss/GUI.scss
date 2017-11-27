@@ -1,0 +1,49 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.wrapper {
+  display: block;
+
+  width: 1220px;
+  margin: auto;
+  @media screen and (max-width: 800px) {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.title {
+  position: relative;
+
+  padding-bottom: 18px;
+
+  letter-spacing: 300 / 1000 * 1em;
+  text-transform: uppercase;
+
+  color: $dark-blue;
+
+  font-family: "Lato-Black";
+  font-size: rem-calc(18);
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 56px;
+    height: 3px;
+
+    content: "";
+  }
+  &._blue {
+    &:after {
+      background-color: #31c7ee;
+    }
+  }
+  &._yellow {
+    color: $white;
+    &:after {
+      background-color: $yellow;
+    }
+  }
+}
