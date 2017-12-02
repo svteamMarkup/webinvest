@@ -1,23 +1,33 @@
 .services {
   padding: 50px 0;
+  
   &__wrapper {
     @extend .wrapper;
   }
   &__list {
-    display: flex;
     display: flex;
 
     padding-top: 35px;
 
     align-items: stretch;
     justify-content: flex-start;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
   }
 }
 
 .services-block {
   width: 500px;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
   &:first-child {
     margin-right: 115px;
+    @media screen and (max-width: 800px) {
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
   }
   &__text {
     padding-top: 35px;
@@ -26,6 +36,11 @@
 
     font-size: rem-calc(16);
     line-height: rem-calc(22);
+    @media screen and (max-width: 800px) {
+      padding-top: 15px;
+
+      text-align: center;
+    }
   }
 }
 
@@ -34,8 +49,17 @@
 
   align-items: center;
   justify-content: flex-start;
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
   &__img {
     width: 205px;
+    @media screen and (max-width: 800px) {
+      width: 90%;
+      margin: auto;
+
+      text-align: center;
+    }
   }
   &__title {
     padding-left: 45px;
@@ -45,5 +69,14 @@
     font-family: "Lato-Bold";
     font-size: rem-calc(32);
     line-height: rem-calc(34);
+    @media screen and (max-width: 800px) {
+      margin-top: 15px;
+      padding-left: 0;
+
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
   }
 }

@@ -8,15 +8,26 @@
     align-items: center;
     @extend .wrapper;
     justify-content: space-between;
+    @media screen and (max-width: 800px) {
+      display: block;
+
+      text-align: center;
+    }
   }
   &__logo {
     @include bg($logo);
+    @media screen and (max-width: 800px) {
+      margin: auto;
+    }
   }
   &__copyright {
     max-width: 70%;
     padding-top: 10px;
 
     color: rgba($white, .7);
+    @media screen and (max-width: 800px) {
+      max-width: 100%;
+    }
     span {
       color: rgba($white, .5);
     }

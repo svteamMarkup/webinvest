@@ -5,6 +5,9 @@
 
   background: url(%=static=%general/top-baner.jpg) no-repeat;
   background-size: cover;
+  @media screen and (max-width: 800px) {
+    min-height: 550px;
+  }
   &:after {
     bottom: 40px;
 
@@ -15,8 +18,13 @@
   }
   &__wrapper {
     @include absolute-center;
+    @media screen and (max-width: 800px) {
+      width: 90%;
+    }
   }
   &__title {
+    min-width: 800px;
+
     text-transform: uppercase;
 
     color: $white;
@@ -24,6 +32,18 @@
     font-family: "Lato-Black";
     font-size: rem-calc(63);
     line-height: 1;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      min-width: auto;
+
+      text-align: center;
+
+      font-size: rem-calc(30);
+      line-height: rem-calc(38);
+      br {
+        display: none;
+      }
+    }
     &:before {
       position: absolute;
       top: -42px;
@@ -35,6 +55,9 @@
       content: "";
 
       background: url(%=static=%general/rect.png) no-repeat;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
     }
   }
   &__caption {
@@ -46,5 +69,17 @@
 
     font-size: rem-calc(14);
     line-height: rem-calc(19);
+    @media screen and (max-width: 800px) {
+      position: relative;
+
+      margin-top: 15px;
+
+      text-align: center;
+
+      line-height: rem-calc(22);
+      br {
+        display: none;
+      }
+    }
   }
 }

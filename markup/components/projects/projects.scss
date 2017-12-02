@@ -11,6 +11,9 @@
     @extend .wrapper;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
   }
   &__list {
     padding-top: 40px;
@@ -30,8 +33,16 @@
 
   background: $white url(%=static=%general/lines.png) repeat-x top;
   box-shadow: 0 0 6px rgba($black, .1);
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    min-height: auto;
+    padding: 40px;
+  }
   &:nth-child(odd) {
     margin-right: 30px;
+    @media screen and (max-width: 800px) {
+      margin-right: 0;
+    }
   }
   &__title {
     margin-bottom: 10px;
@@ -43,18 +54,35 @@
 
     font-family: "Lato-Black";
     font-size: rem-calc(34);
+    @media screen and (max-width: 800px) {
+      font-size: rem-calc(20);
+    }
   }
   &__content {
     width: 260px;
+    @media screen and (max-width: 800px) {
+      position: relative;
+      z-index: 2;
+
+      width: 100%;
+
+      text-align: center;
+    }
   }
   &__image {
     position: absolute;
     right: 0;
     bottom: 0;
+    @media screen and (max-width: 800px) {
+      z-index: 1;
+    }
     img {
       float: right;
 
       width: 95%;
+      @media screen and (max-width: 800px) {
+        opacity: .1;
+      }
     }
   }
   &__caption {
@@ -63,6 +91,9 @@
     font-family: "Lato-Italic";
     font-size: rem-calc(14);
     line-height: rem-calc(19);
+    @media screen and (max-width: 800px) {
+      text-align: center;
+    }
   }
 }
 

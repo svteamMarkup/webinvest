@@ -450,6 +450,12 @@ blockquote {
   font-size: 1.125rem;
 }
 
+@media screen and (max-width: 800px) {
+  .title {
+    text-align: center;
+  }
+}
+
 .title:after {
   position: absolute;
   bottom: 0;
@@ -457,6 +463,13 @@ blockquote {
   width: 56px;
   height: 3px;
   content: "";
+}
+
+@media screen and (max-width: 800px) {
+  .title:after {
+    right: 0;
+    margin: auto;
+  }
 }
 
 .title._blue:after {
@@ -481,6 +494,12 @@ html, body {
   background-size: cover;
 }
 
+@media screen and (max-width: 800px) {
+  .about {
+    padding: 50px 0;
+  }
+}
+
 .about__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,9 +512,21 @@ html, body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+  .about__wrapper {
+    display: block;
+  }
+}
+
 .about__left {
   width: 350px;
   padding-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .about__left {
+    width: 100%;
+  }
 }
 
 .about__right {
@@ -503,6 +534,12 @@ html, body {
   color: #fff;
   font-size: 1.1875rem;
   line-height: 2.1875rem;
+}
+
+@media screen and (max-width: 800px) {
+  .about__right {
+    width: 100%;
+  }
 }
 
 .about__right p {
@@ -517,6 +554,12 @@ html, body {
   color: #fff;
   font-family: "Lato-Black";
   font-size: 1.125rem;
+}
+
+@media screen and (max-width: 800px) {
+  .about__title {
+    margin-bottom: 20px;
+  }
 }
 
 .about__title:after {
@@ -538,10 +581,22 @@ html, body {
   line-height: 1;
 }
 
+@media screen and (max-width: 800px) {
+  .about__title span {
+    font-size: 3.125rem;
+  }
+}
+
 .advantages {
   padding: 65px 0;
   background: url(../images/general/why.jpg) no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .advantages {
+    padding: 50px 0;
+  }
 }
 
 .advantages__top {
@@ -557,9 +612,22 @@ html, body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+  .advantages__top {
+    display: block;
+  }
+}
+
 .advantages__description {
   max-width: 885px;
   color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .advantages__description {
+    padding-top: 15px;
+    text-align: center;
+  }
 }
 
 .advantages__list {
@@ -574,11 +642,25 @@ html, body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+  .advantages__list {
+    display: block;
+  }
+}
+
 .advantages-block {
   width: 390px;
   padding: 25px 0 25px;
   background-color: #fff;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 800px) {
+  .advantages-block {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
 .advantages-block__title {
@@ -600,6 +682,12 @@ html, body {
 .advantages-block__graphic img {
   display: block;
   margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .advantages-block__graphic img {
+    width: 100%;
+  }
 }
 
 .advantages-block-row {
@@ -649,6 +737,12 @@ html, body {
   width: 234px;
 }
 
+@media screen and (max-width: 800px) {
+  .advantages-block-row__content {
+    width: 200px;
+  }
+}
+
 .advantages-block-row__content strong {
   display: block;
   color: #2a2a2a;
@@ -667,6 +761,12 @@ html, body {
   background: #f7f9fb;
 }
 
+@media screen and (max-width: 800px) {
+  .contacts {
+    padding: 50px 10px;
+  }
+}
+
 .contacts__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -679,9 +779,27 @@ html, body {
           justify-content: flex-end;
 }
 
+@media screen and (max-width: 800px) {
+  .contacts__wrapper {
+    display: block;
+  }
+}
+
 .contacts__left {
   padding-top: 80px;
   padding-right: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  .contacts__left {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contacts__right {
+    display: none;
+  }
 }
 
 .contacts__right img {
@@ -704,10 +822,23 @@ html, body {
   line-height: 1;
 }
 
+@media screen and (max-width: 800px) {
+  .contacts__title span {
+    top: -10px;
+    font-size: 3.125rem;
+  }
+}
+
 .contacts__subtitle {
   margin-bottom: 35px;
   color: #2a2a2a;
   font-size: 1.25rem;
+}
+
+@media screen and (max-width: 800px) {
+  .contacts__subtitle br {
+    display: none;
+  }
 }
 
 .contacts__row {
@@ -792,6 +923,13 @@ html, body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+  .footer__wrapper {
+    display: block;
+    text-align: center;
+  }
+}
+
 .footer__logo {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
   background-position: 0px -130px;
@@ -801,10 +939,22 @@ html, body {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 800px) {
+  .footer__logo {
+    margin: auto;
+  }
+}
+
 .footer__copyright {
   max-width: 70%;
   padding-top: 10px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 800px) {
+  .footer__copyright {
+    max-width: 100%;
+  }
 }
 
 .footer__copyright span {
@@ -844,6 +994,12 @@ html, body {
 .header._active .header-menu {
   width: 100%;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .header._active .header-menu {
+    display: none;
+  }
 }
 
 .header._active .header-menu__item {
@@ -892,6 +1048,12 @@ html, body {
 
 .header-menu {
   padding-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .header-menu {
+    display: none;
+  }
 }
 
 .header-menu__list {
@@ -953,8 +1115,21 @@ html, body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+  .partners__wrapper {
+    display: block;
+  }
+}
+
 .partners__image img {
   margin-left: 46px;
+}
+
+@media screen and (max-width: 800px) {
+  .partners__image img {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .projects__top {
@@ -975,6 +1150,12 @@ html, body {
           justify-content: center;
 }
 
+@media screen and (max-width: 800px) {
+  .projects__wrapper {
+    display: block;
+  }
+}
+
 .projects__list {
   padding-top: 40px;
   background-color: #f7f9fb;
@@ -991,8 +1172,22 @@ html, body {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 800px) {
+  .projects-block {
+    width: 100%;
+    min-height: auto;
+    padding: 40px;
+  }
+}
+
 .projects-block:nth-child(odd) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .projects-block:nth-child(odd) {
+    margin-right: 0;
+  }
 }
 
 .projects-block__title {
@@ -1004,8 +1199,23 @@ html, body {
   font-size: 2.125rem;
 }
 
+@media screen and (max-width: 800px) {
+  .projects-block__title {
+    font-size: 1.25rem;
+  }
+}
+
 .projects-block__content {
   width: 260px;
+}
+
+@media screen and (max-width: 800px) {
+  .projects-block__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .projects-block__image {
@@ -1014,9 +1224,21 @@ html, body {
   bottom: 0;
 }
 
+@media screen and (max-width: 800px) {
+  .projects-block__image {
+    z-index: 1;
+  }
+}
+
 .projects-block__image img {
   float: right;
   width: 95%;
+}
+
+@media screen and (max-width: 800px) {
+  .projects-block__image img {
+    opacity: .1;
+  }
 }
 
 .projects-block__caption {
@@ -1024,6 +1246,12 @@ html, body {
   font-family: "Lato-Italic";
   font-size: 0.875rem;
   line-height: 1.1875rem;
+}
+
+@media screen and (max-width: 800px) {
+  .projects-block__caption {
+    text-align: center;
+  }
 }
 
 .projects-block-meta__row {
@@ -1049,7 +1277,6 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: flex;
   padding-top: 35px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -1059,12 +1286,31 @@ html, body {
           justify-content: flex-start;
 }
 
+@media screen and (max-width: 800px) {
+  .services__list {
+    display: block;
+  }
+}
+
 .services-block {
   width: 500px;
 }
 
+@media screen and (max-width: 800px) {
+  .services-block {
+    width: 100%;
+  }
+}
+
 .services-block:first-child {
   margin-right: 115px;
+}
+
+@media screen and (max-width: 800px) {
+  .services-block:first-child {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
 }
 
 .services-block__text {
@@ -1072,6 +1318,13 @@ html, body {
   color: #2d3444;
   font-size: 1rem;
   line-height: 1.375rem;
+}
+
+@media screen and (max-width: 800px) {
+  .services-block__text {
+    padding-top: 15px;
+    text-align: center;
+  }
 }
 
 .services-block-top {
@@ -1086,8 +1339,22 @@ html, body {
           justify-content: flex-start;
 }
 
+@media screen and (max-width: 800px) {
+  .services-block-top {
+    display: block;
+  }
+}
+
 .services-block-top__img {
   width: 205px;
+}
+
+@media screen and (max-width: 800px) {
+  .services-block-top__img {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 .services-block-top__title {
@@ -1098,11 +1365,28 @@ html, body {
   line-height: 2.125rem;
 }
 
+@media screen and (max-width: 800px) {
+  .services-block-top__title {
+    margin-top: 15px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .services-block-top__title br {
+    display: none;
+  }
+}
+
 .top-baner {
   position: relative;
   min-height: 700px;
   background: url(../images/general/top-baner.jpg) no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .top-baner {
+    min-height: 550px;
+  }
 }
 
 .top-baner:after {
@@ -1128,12 +1412,32 @@ html, body {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 800px) {
+  .top-baner__wrapper {
+    width: 90%;
+  }
+}
+
 .top-baner__title {
+  min-width: 800px;
   text-transform: uppercase;
   color: #fff;
   font-family: "Lato-Black";
   font-size: 3.9375rem;
   line-height: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .top-baner__title {
+    width: 100%;
+    min-width: auto;
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+  }
+  .top-baner__title br {
+    display: none;
+  }
 }
 
 .top-baner__title:before {
@@ -1146,6 +1450,12 @@ html, body {
   background: url(../images/general/rect.png) no-repeat;
 }
 
+@media screen and (max-width: 800px) {
+  .top-baner__title:before {
+    display: none;
+  }
+}
+
 .top-baner__caption {
   position: absolute;
   right: 0;
@@ -1153,4 +1463,16 @@ html, body {
   color: #fff;
   font-size: 0.875rem;
   line-height: 1.1875rem;
+}
+
+@media screen and (max-width: 800px) {
+  .top-baner__caption {
+    position: relative;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 1.375rem;
+  }
+  .top-baner__caption br {
+    display: none;
+  }
 }

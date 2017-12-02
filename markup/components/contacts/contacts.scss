@@ -1,16 +1,28 @@
 .contacts {
   background: #f7f9fb;
+  @media screen and (max-width: 800px) {
+    padding: 50px 10px;
+  }
   &__wrapper {
     display: flex;
 
     align-items: stretch;
     justify-content: flex-end;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
   }
   &__left {
     padding-top: 80px;
     padding-right: 60px;
+    @media screen and (max-width: 800px) {
+      padding: 0;
+    }
   }
   &__right {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
     img {
       display: block;
     }
@@ -21,6 +33,7 @@
     font-family: "Lato-Light";
     font-size: rem-calc(44);
     line-height: 1;
+
     span {
       position: relative;
       top: -20px;
@@ -30,6 +43,11 @@
       font-family: "Lato-Black";
       font-size: rem-calc(69);
       line-height: 1;
+      @media screen and (max-width: 800px) {
+        top: -10px;
+
+        font-size: rem-calc(50);
+      }
     }
   }
   &__subtitle {
@@ -38,6 +56,11 @@
     color: #2a2a2a;
 
     font-size: rem-calc(20);
+    @media screen and (max-width: 800px) {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__row {

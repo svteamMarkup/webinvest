@@ -3,6 +3,9 @@
 
   background: url(%=static=%general/why.jpg) no-repeat;
   background-size: cover;
+  @media screen and (max-width: 800px) {
+    padding: 50px 0;
+  }
   &__wrapper {
     @extend .wrapper;
   }
@@ -13,17 +16,28 @@
 
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
   }
   &__description {
     max-width: 885px;
 
     color: $white;
+    @media screen and (max-width: 800px) {
+      padding-top: 15px;
+
+      text-align: center;
+    }
   }
   &__list {
     display: flex;
 
     align-items: stretch;
     justify-content: space-between;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
   }
 }
 
@@ -33,6 +47,11 @@
 
   background-color: $white;
   box-shadow: 0 0 6px rgba($black, .2);
+  @media screen and (max-width: 800px) {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 25px;
+  }
   &__title {
     margin-bottom: 25px;
 
@@ -56,6 +75,9 @@
       display: block;
 
       margin: auto;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -84,6 +106,9 @@
   }
   &__content {
     width: 234px;
+    @media screen and (max-width: 800px) {
+      width: 200px;
+    }
   }
   &__content {
     strong {

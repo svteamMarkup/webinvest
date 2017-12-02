@@ -25,6 +25,9 @@
 
   font-family: "Lato-Black";
   font-size: rem-calc(18);
+  @media screen and (max-width: 800px) {
+    text-align: center;
+  }
   &:after {
     position: absolute;
     bottom: 0;
@@ -34,6 +37,11 @@
     height: 3px;
 
     content: "";
+    @media screen and (max-width: 800px) {
+      right: 0;
+
+      margin: auto;
+    }
   }
   &._blue {
     &:after {
