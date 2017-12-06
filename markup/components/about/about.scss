@@ -3,7 +3,7 @@
 
   background: url(%=static=%general/about.jpg) no-repeat;
   background-size: cover;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     padding: 50px 0;
   }
   &__wrapper {
@@ -30,6 +30,9 @@
 
     font-size: rem-calc(19);
     line-height: rem-calc(35);
+    @media screen and (max-width: 1200px) {
+      width: 600px;
+    }
     @media screen and (max-width: 800px) {
       width: 100%;
     }

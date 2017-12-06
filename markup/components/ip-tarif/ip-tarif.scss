@@ -1,0 +1,103 @@
+.ip-tarif {
+  padding: 60px 0;
+
+  background: url(%=static=%general/tarif.jpg) no-repeat bottom;
+  background-size: cover;
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__bottom {
+    position: relative;
+
+    box-sizing: border-box;
+    max-width: 92%;
+    margin: auto;
+    margin-top: 70px;
+    padding: 0 70px;
+
+    text-align: center;
+
+    color: $white;
+
+    font-size: rem-calc(27);
+    line-height: rem-calc(37);
+    &:before,
+    &:after {
+      position: absolute;
+
+      font-size: rem-calc(53);
+
+      @include vertical-center;
+    }
+    &:before {
+      left: 0;
+
+      content: "«";
+    }
+    &:after {
+      right: 0;
+
+      content: "»";
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  margin-top: 37px;
+
+  border-top: 1px solid rgba($white, .6);
+  box-shadow: 0 0 10px rgba($black, .14);
+  table {
+    width: 100%;
+    thead {
+      tr {
+        background: #69add5;
+        th {
+          padding: 15px 0;
+
+          color: $white;
+          border: 1px solid #61a8d2;
+          border-collapse: collapse;
+
+          font-size: rem-calc(19);
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background-color: $white;
+        }
+        &:nth-child(even) {
+          background-color: #f7f9fb;
+        }
+        td {
+          padding: 15px 0;
+
+          text-align: center;
+
+          color: #3b3b3b;
+          border: 1px solid #e8f2f8;
+          border-collapse: collapse;
+          .bold {
+            font-family: "Lato-Bold";
+          }
+          .gray {
+            color: #a0a0a0;
+            border-bottom: 1px solid #a0a0a0;
+          }
+          a {
+            text-decoration: none;
+
+            color: #1c8fd2;
+            border-bottom: 1px solid #1c8fd2;
+            &:hover {
+              border-bottom: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

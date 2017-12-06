@@ -5,6 +5,20 @@
 
   background: url(%=static=%general/top-baner.jpg) no-repeat;
   background-size: cover;
+  &._host {
+    min-height: auto;
+    min-height: 170px;
+    &:after {
+      display: none;
+    }
+    .top-baner__wrapper {
+      position: absolute;
+      top: inherit;
+      bottom: 0;
+
+      @include horizontal-center;
+    }
+  }
   @media screen and (max-width: 800px) {
     min-height: 550px;
   }
@@ -79,6 +93,130 @@
       line-height: rem-calc(22);
       br {
         display: none;
+      }
+    }
+  }
+}
+
+.top-baner-switcher {
+  display: flex;
+
+  align-items: stretch;
+  justify-content: center;
+  &__item {
+    position: relative;
+    z-index: 9;
+
+    height: 46px;
+    margin-right: 30px;
+    padding: 0 25px;
+
+    color: $yellow;
+    border-radius: 3px;
+    background-color: #0248a0;
+
+    font-size: rem-calc(17);
+    line-height: 46px;
+    &:hover {
+      text-decoration: none;
+    }
+    &:first-child {
+      z-index: 10;
+    }
+    &:last-child {
+      z-index: 9;
+      &._active {
+        z-index: 11;
+      }
+    }
+    &._active {
+      text-decoration: none;
+
+      color: #0248a0;
+      background-color: $white;
+      &:before {
+        border-bottom: 46px solid $white;
+        box-shadow: 1px 0 0 $white;
+      }
+      &:after {
+        border-bottom: 46px solid $white;
+        box-shadow: -1px 0 0 $white;
+      }
+    }
+    &:before {
+      position: absolute;
+      z-index: 8;
+      top: 0;
+      left: -30px;
+
+      width: 0;
+      height: 0;
+
+      content: "";
+
+      border-bottom: 46px solid #0248a0;
+      border-left: 30px solid transparent;
+      box-shadow: 1px 0 0 #0248a0;
+    }
+    &:after {
+      position: absolute;
+      z-index: 8;
+      top: 0;
+      right: -29px;
+
+      width: 0;
+      height: 0;
+
+      content: "";
+
+      border-right: 30px solid transparent;
+      border-bottom: 46px solid #0248a0;
+      box-shadow: -1px 0 0 #0248a0;
+    }
+    span {
+      &:before {
+        position: relative;
+
+        display: inline-block;
+
+        margin-right: 10px;
+
+        content: "";
+        vertical-align: center;
+      }
+    }
+    &._ip {
+      span {
+        &:before {
+          top: 3px;
+
+          @include bg($ip-anactive);
+        }
+      }
+      &._active {
+        span {
+          &:before {
+            top: 2px;
+
+            @include bg($ip-active);
+          }
+        }
+      }
+    }
+    &._cloud {
+      span {
+        &:before {
+          @include bg($cloud-anactive);
+        }
+      }
+      &._active {
+        span {
+          &:before {
+            top: 1px;
+
+            @include bg($cloud-active);
+          }
+        }
       }
     }
   }

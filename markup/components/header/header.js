@@ -2,6 +2,7 @@ $(document).ready(function() {
   $(".header-menu__item").click(function() {
     var elementClick = $(this).attr("href")
     var destination = $(elementClick).offset().top;
+    console.log(destination);
     $(this).addClass('_active').siblings().removeClass('_active');
     $("html:not(:animated),body:not(:animated)").animate({
       scrollTop: destination - 50

@@ -24,6 +24,9 @@
     max-width: 885px;
 
     color: $white;
+    @media screen and (max-width: 1200px) {
+      max-width: 780px;
+    }
     @media screen and (max-width: 800px) {
       padding-top: 15px;
 
@@ -47,6 +50,10 @@
 
   background-color: $white;
   box-shadow: 0 0 6px rgba($black, .2);
+  @media screen and (max-width: 1200px) {
+    box-sizing: border-box;
+    width: 320px;
+  }
   @media screen and (max-width: 800px) {
     box-sizing: border-box;
     width: 100%;
@@ -75,6 +82,9 @@
       display: block;
 
       margin: auto;
+      @media screen and (max-width: 1200px) {
+        width: 90%;
+      }
       @media screen and (max-width: 800px) {
         width: 100%;
       }
@@ -90,6 +100,9 @@
 
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 1200px) {
+    padding: 0 25px;
+  }
   &__img {
     &._comp {
       @include bg($comp);
@@ -106,7 +119,7 @@
   }
   &__content {
     width: 234px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1200px) {
       width: 200px;
     }
   }

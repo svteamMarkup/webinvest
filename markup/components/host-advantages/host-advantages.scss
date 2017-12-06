@@ -1,0 +1,36 @@
+.host-advantages {
+  &__wrapper {
+    @extend .wrapper;
+  }
+}
+
+.host-advantages-list {
+  display: flex;
+
+  margin-top: 25px;
+  padding-bottom: 50px;
+
+  align-items: flex-start;
+  justify-content: space-between;
+  &__item {
+    position: relative;
+
+    max-width: 80%;
+    margin-top: 30px;
+    padding-left: 50px;
+
+    color: #4e4e4e;
+
+    font-size: rem-calc(16);
+    line-height: rem-calc(22);
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      content: "";
+
+      @include bg($check);
+    }
+  }
+}

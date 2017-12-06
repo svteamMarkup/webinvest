@@ -3,6 +3,9 @@
     padding: 35px 0;
 
     @extend .wrapper;
+    @media screen and (max-width: 1200px) {
+      padding: 35px 15px;
+    }
   }
   &__wrapper {
     display: flex;
@@ -33,6 +36,9 @@
 
   background: $white url(%=static=%general/lines.png) repeat-x top;
   box-shadow: 0 0 6px rgba($black, .1);
+  @media screen and (max-width: 1200px) {
+    width: 48%;
+  }
   @media screen and (max-width: 800px) {
     width: 100%;
     min-height: auto;
@@ -73,6 +79,9 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    @media screen and (max-width: 1200px) {
+      width: 50%;
+    }
     @media screen and (max-width: 800px) {
       z-index: 1;
     }

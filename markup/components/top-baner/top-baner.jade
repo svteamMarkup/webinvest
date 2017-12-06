@@ -1,5 +1,13 @@
-mixin top-baner(data)
-  .top-baner
+mixin top-baner(page)
+  - var modiffer = attributes.class || ''
+  .top-baner(class="#{modiffer}")
     .top-baner__wrapper
-      .top-baner__title эффективая реклама <br>на наших интернет <br>проектах
-      .top-baner__caption Реклама на наших сайтах позволит вам сделать мощный рывок в <br>своей деловой сфере. Десятки тысяч посетителей наших порталов <br>увидят вашу рекламу, а многие станут вашими клиентами.
+      if (page != 'host') 
+        .top-baner__title эффективая реклама <br>на наших интернет <br>проектах
+        .top-baner__caption Реклама на наших сайтах позволит вам сделать мощный рывок в <br>своей деловой сфере. Десятки тысяч посетителей наших порталов <br>увидят вашу рекламу, а многие станут вашими клиентами.
+      else 
+        .top-baner-switcher
+          a(href="#" title="").top-baner-switcher__item._ip._active
+            span IP transit
+          a(href="#" title="").top-baner-switcher__item._cloud
+            span Cloud Hosting

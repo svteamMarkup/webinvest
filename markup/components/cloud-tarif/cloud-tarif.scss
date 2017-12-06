@@ -1,0 +1,55 @@
+.cloud-tarif {
+  padding: 60px 0;
+
+  background: url(%=static=%general/tarif.jpg) no-repeat bottom;
+  background-size: cover;
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__list {
+    display: flex;
+
+    margin-top: 30px;
+
+    align-items: stretch;
+    justify-content: space-between;
+  }
+}
+
+.cloud-tarif-item {
+  width: 23%;
+
+  text-align: center;
+
+  background-color: $white;
+  box-shadow: 0 0 10px rgba($black, .14);
+  &__top {
+    padding: 15px 0;
+
+    color: #23355a;
+
+    font-family: "Lato-Bold";
+    font-size: rem-calc(75);
+    &._tarif1 {
+      background-color: #d1e6f2;
+    }
+    &._tarif2 {
+      background-color: #a3cde5;
+    }
+    &._tarif3 {
+      background-color: #75b3d8;
+    }
+    &._tarif4 {
+      background-color: #479acb;
+    }
+  }
+  &__bottom {
+    padding: 15px 0;
+
+    color: #3b3b3b;
+    border-bottom: 1px solid #e8f2f8;
+
+    font-family: "Lato-Light";
+    font-size: rem-calc(19);
+  }
+}

@@ -1,0 +1,55 @@
+.host-top {
+  padding: 95px 0;
+  &__wrapper {
+    display: flex;
+
+    align-items: center;
+    @extend .wrapper;
+    justify-content: space-between;
+  }
+  &__title {
+    position: relative;
+
+    padding-left: 50px;
+
+    text-transform: uppercase;
+
+    color: $dark-blue;
+
+    font-family: "Lato-Black";
+    font-size: rem-calc(60);
+    line-height: rem-calc(63);
+    &:before {
+      position: absolute;
+      top: -27px;
+      left: 5px;
+
+      width: 183px;
+      height: 183px;
+
+      content: "";
+
+      background: url(%=static=%general/rect-small-yellow.png) no-repeat;
+    }
+  }
+  &__subtitle {
+    position: absolute;
+    bottom: -50px;
+    left: 210px;
+
+    color: #4e4e4e;
+
+    font-family: "Lato-Light";
+    font-size: rem-calc(27);
+  }
+  &__right {
+    max-width: 560px;
+    padding-right: 40px;
+
+    color: #4e4e4e;
+
+    font-family: "Lato-Light";
+    font-size: rem-calc(27);
+    line-height: rem-calc(29);
+  }
+}

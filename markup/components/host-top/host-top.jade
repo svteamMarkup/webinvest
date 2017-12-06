@@ -1,0 +1,12 @@
+mixin host-top(page)
+  .host-top
+    .host-top__wrapper
+      .host-top__left
+        if (page != 'cloud')
+          .host-top__title Multihomed <br>IP Transit
+        else
+          .host-top__title High Performance Cloud <br>Servers & Hosting
+            .host-top__subtitle Available in Riga and Amsterdam.
+      if (page != 'cloud')
+        .host-top__right
+          .host-top__text HOSTING.WEBINVEST provides worldwide multi-homed IP transit over an extremely fast network with virtually no latencies at unbeatable prices.
