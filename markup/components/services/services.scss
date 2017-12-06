@@ -11,7 +11,7 @@
 
     align-items: stretch;
     justify-content: flex-start;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       display: block;
     }
   }
@@ -19,12 +19,12 @@
 
 .services-block {
   width: 500px;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 990px) {
     width: 100%;
   }
   &:first-child {
     margin-right: 115px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       margin-right: 0;
       margin-bottom: 50px;
     }
@@ -36,7 +36,7 @@
 
     font-size: rem-calc(16);
     line-height: rem-calc(22);
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       padding-top: 15px;
 
       text-align: center;
@@ -49,12 +49,12 @@
 
   align-items: center;
   justify-content: flex-start;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 990px) {
     display: block;
   }
   &__img {
     width: 205px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       width: 90%;
       margin: auto;
 
@@ -69,7 +69,7 @@
     font-family: "Lato-Bold";
     font-size: rem-calc(32);
     line-height: rem-calc(34);
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       margin-top: 15px;
       padding-left: 0;
 

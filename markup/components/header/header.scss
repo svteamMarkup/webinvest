@@ -5,7 +5,7 @@
   left: 0;
 
   margin: auto;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 990px) {
     position: absolute;
 
     width: 100%;
@@ -25,7 +25,7 @@
     .header-menu {
       width: 100%;
       margin-top: 5px;
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 990px) {
         display: none;
       }
 
@@ -48,11 +48,19 @@
     align-items: center;
     @extend .wrapper;
     justify-content: space-between;
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+
+      justify-content: center;
+    }
   }
   &__logo {
     @include bg($logo);
     @include transition;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 990px) {
       margin: auto;
     }
   }
@@ -60,7 +68,7 @@
 
 .header-menu {
   padding-top: 10px;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 990px) {
     display: none;
   }
   &__list {

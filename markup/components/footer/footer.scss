@@ -8,7 +8,7 @@
     align-items: center;
     @extend .wrapper;
     justify-content: space-between;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       display: block;
 
       text-align: center;
@@ -16,7 +16,7 @@
   }
   &__logo {
     @include bg($logo);
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       margin: auto;
     }
   }
@@ -25,7 +25,7 @@
     padding-top: 10px;
 
     color: rgba($white, .7);
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       max-width: 100%;
     }
     span {

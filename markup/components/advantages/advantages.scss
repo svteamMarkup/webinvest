@@ -3,7 +3,7 @@
 
   background: url(%=static=%general/why.jpg) no-repeat;
   background-size: cover;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 990px) {
     padding: 50px 0;
   }
   &__wrapper {
@@ -16,7 +16,7 @@
 
     align-items: center;
     justify-content: space-between;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       display: block;
     }
   }
@@ -27,7 +27,7 @@
     @media screen and (max-width: 1200px) {
       max-width: 780px;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       padding-top: 15px;
 
       text-align: center;
@@ -38,7 +38,7 @@
 
     align-items: stretch;
     justify-content: space-between;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       display: block;
     }
   }
@@ -54,7 +54,7 @@
     box-sizing: border-box;
     width: 320px;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 990px) {
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 25px;
@@ -85,7 +85,7 @@
       @media screen and (max-width: 1200px) {
         width: 90%;
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 990px) {
         width: 100%;
       }
     }

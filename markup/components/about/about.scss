@@ -12,14 +12,14 @@
     align-items: flex-start;
     @extend .wrapper;
     justify-content: space-between;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       display: block;
     }
   }
   &__left {
     width: 350px;
     padding-top: 30px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       width: 100%;
     }
   }
@@ -33,7 +33,7 @@
     @media screen and (max-width: 1200px) {
       width: 600px;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       width: 100%;
     }
     p {
@@ -51,7 +51,7 @@
 
     font-family: "Lato-Black";
     font-size: rem-calc(18);
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       margin-bottom: 20px;
     }
     &:after {
@@ -76,7 +76,7 @@
 
       font-size: rem-calc(65);
       line-height: 1;
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 990px) {
         font-size: rem-calc(50);
       }
     }

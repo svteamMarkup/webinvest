@@ -14,7 +14,7 @@
     @extend .wrapper;
     flex-wrap: wrap;
     justify-content: center;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       display: block;
     }
   }
@@ -39,14 +39,14 @@
   @media screen and (max-width: 1200px) {
     width: 48%;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 990px) {
     width: 100%;
     min-height: auto;
     padding: 40px;
   }
   &:nth-child(odd) {
     margin-right: 30px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       margin-right: 0;
     }
   }
@@ -60,13 +60,13 @@
 
     font-family: "Lato-Black";
     font-size: rem-calc(34);
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       font-size: rem-calc(20);
     }
   }
   &__content {
     width: 260px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       position: relative;
       z-index: 2;
 
@@ -82,14 +82,14 @@
     @media screen and (max-width: 1200px) {
       width: 50%;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       z-index: 1;
     }
     img {
       float: right;
 
       width: 95%;
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 990px) {
         opacity: .1;
       }
     }
@@ -100,7 +100,7 @@
     font-family: "Lato-Italic";
     font-size: rem-calc(14);
     line-height: rem-calc(19);
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       text-align: center;
     }
   }

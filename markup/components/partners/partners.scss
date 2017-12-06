@@ -6,7 +6,7 @@
     align-items: center;
     @extend .wrapper;
     justify-content: space-between;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       display: block;
     }
   }
@@ -16,7 +16,7 @@
       @media screen and (max-width: 1200px) {
         width: 30%;
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 990px) {
         width: 100%;
         margin-left: 0;
       }
