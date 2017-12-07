@@ -427,14 +427,14 @@ blockquote {
   text-rendering: optimizeLegibility;
 }
 
-.wrapper, .about__wrapper, .advantages__wrapper, .cloud-tarif__wrapper, .footer__wrapper, .header__wrapper, .host-about__wrapper, .host-top__wrapper, .host-advantages__wrapper, .ip-tarif__wrapper, .partners__wrapper, .projects__top, .projects__wrapper, .services__wrapper {
+.wrapper, .about__wrapper, .advantages__wrapper, .cloud-tarif__wrapper, .footer__wrapper, .header__wrapper, .host-about__wrapper, .host-advantages__wrapper, .host-top__wrapper, .ip-tarif__wrapper, .partners__wrapper, .projects__top, .projects__wrapper, .services__wrapper {
   display: block;
   width: 1220px;
   margin: auto;
 }
 
 @media screen and (max-width: 1200px) {
-  .wrapper, .about__wrapper, .advantages__wrapper, .cloud-tarif__wrapper, .footer__wrapper, .header__wrapper, .host-about__wrapper, .host-top__wrapper, .host-advantages__wrapper, .ip-tarif__wrapper, .partners__wrapper, .projects__top, .projects__wrapper, .services__wrapper {
+  .wrapper, .about__wrapper, .advantages__wrapper, .cloud-tarif__wrapper, .footer__wrapper, .header__wrapper, .host-about__wrapper, .host-advantages__wrapper, .host-top__wrapper, .ip-tarif__wrapper, .partners__wrapper, .projects__top, .projects__wrapper, .services__wrapper {
     box-sizing: border-box;
     width: 100%;
     padding: 0 15px;
@@ -442,7 +442,7 @@ blockquote {
 }
 
 @media screen and (max-width: 990px) {
-  .wrapper, .about__wrapper, .advantages__wrapper, .cloud-tarif__wrapper, .footer__wrapper, .header__wrapper, .host-about__wrapper, .host-top__wrapper, .host-advantages__wrapper, .ip-tarif__wrapper, .partners__wrapper, .projects__top, .projects__wrapper, .services__wrapper {
+  .wrapper, .about__wrapper, .advantages__wrapper, .cloud-tarif__wrapper, .footer__wrapper, .header__wrapper, .host-about__wrapper, .host-advantages__wrapper, .host-top__wrapper, .ip-tarif__wrapper, .partners__wrapper, .projects__top, .projects__wrapper, .services__wrapper {
     width: 100%;
     padding: 0 10px;
   }
@@ -684,7 +684,7 @@ html, body {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 790px) {
   .advantages__list {
     display: block;
   }
@@ -705,6 +705,12 @@ html, body {
 }
 
 @media screen and (max-width: 990px) {
+  .advantages-block {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 790px) {
   .advantages-block {
     box-sizing: border-box;
     width: 100%;
@@ -741,7 +747,7 @@ html, body {
 
 @media screen and (max-width: 990px) {
   .advantages-block__graphic img {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -754,15 +760,19 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 @media screen and (max-width: 1200px) {
   .advantages-block-row {
     padding: 0 25px;
   }
+}
+
+.advantages-block-row__img {
+  margin-right: 15px;
 }
 
 .advantages-block-row__img._comp {
@@ -804,11 +814,23 @@ html, body {
   }
 }
 
+@media screen and (max-width: 990px) {
+  .advantages-block-row__content {
+    width: 180px;
+  }
+}
+
 .advantages-block-row__content strong {
   display: block;
   color: #2a2a2a;
   font-family: "Lato-Black";
   font-size: 1.875rem;
+}
+
+@media screen and (max-width: 990px) {
+  .advantages-block-row__content strong {
+    font-size: 1.625rem;
+  }
 }
 
 .advantages-block-row__content span {
@@ -1259,6 +1281,43 @@ html, body {
   line-height: 1.875rem;
 }
 
+.host-advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  padding-bottom: 50px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.host-advantages-list__item {
+  position: relative;
+  max-width: 80%;
+  margin-top: 30px;
+  padding-left: 50px;
+  color: #4e4e4e;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+.host-advantages-list__item:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -260px -160px;
+  width: 34px;
+  height: 34px;
+  background-size: 305px, 238px;
+  background-repeat: no-repeat;
+}
+
 .host-top {
   padding: 95px 0;
 }
@@ -1311,43 +1370,6 @@ html, body {
   font-family: "Lato-Light";
   font-size: 1.6875rem;
   line-height: 1.8125rem;
-}
-
-.host-advantages-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 25px;
-  padding-bottom: 50px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.host-advantages-list__item {
-  position: relative;
-  max-width: 80%;
-  margin-top: 30px;
-  padding-left: 50px;
-  color: #4e4e4e;
-  font-size: 1rem;
-  line-height: 1.375rem;
-}
-
-.host-advantages-list__item:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -260px -160px;
-  width: 34px;
-  height: 34px;
-  background-size: 305px, 238px;
-  background-repeat: no-repeat;
 }
 
 .ip-tarif {
@@ -1548,6 +1570,7 @@ html, body {
     width: 100%;
     min-height: auto;
     padding: 40px;
+    overflow: hidden;
   }
 }
 
