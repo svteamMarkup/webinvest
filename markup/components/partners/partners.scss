@@ -11,12 +11,15 @@
     }
   }
   &__image {
+      @media screen and (max-width: 1200px) {
+        text-align: center;
+      }
     img {
       margin-left: 46px;
       @media screen and (max-width: 1200px) {
         width: 30%;
       }
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 790px) {
         width: 100%;
         margin-left: 0;
       }

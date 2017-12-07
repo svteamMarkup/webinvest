@@ -1,6 +1,6 @@
 .services {
   padding: 50px 0;
-  
+
   &__wrapper {
     @extend .wrapper;
   }
@@ -12,6 +12,9 @@
     align-items: stretch;
     justify-content: flex-start;
     @media screen and (max-width: 990px) {
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 790px) {
       display: block;
     }
   }
@@ -20,6 +23,9 @@
 .services-block {
   width: 500px;
   @media screen and (max-width: 990px) {
+    width: 46%;
+  }
+  @media screen and (max-width: 790px) {
     width: 100%;
   }
   &:first-child {
