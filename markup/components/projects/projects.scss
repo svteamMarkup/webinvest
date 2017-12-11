@@ -28,6 +28,8 @@
 .projects-block {
   position: relative;
 
+  overflow: hidden;
+
   box-sizing: border-box;
   width: 590px;
   min-height: 360px;
@@ -36,14 +38,15 @@
 
   background: $white url(%=static=%general/lines.png) repeat-x top;
   box-shadow: 0 0 6px rgba($black, .1);
+
   @media screen and (max-width: 1200px) {
     width: 47%;
+    padding: 40px 20px 0 20px;
   }
   @media screen and (max-width: 790px) {
     width: 100%;
     min-height: auto;
     padding: 40px;
-    overflow: hidden;
   }
   &:nth-child(odd) {
     margin-right: 30px;
@@ -88,6 +91,8 @@
     }
     @media screen and (max-width: 990px) {
       z-index: 1;
+
+      overflow: hidden;
     }
     img {
       float: right;

@@ -859,6 +859,16 @@ html, body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 990px) {
+  .cloud-tarif__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .cloud-tarif-item {
   width: 23%;
   text-align: center;
@@ -866,11 +876,24 @@ html, body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
 }
 
+@media screen and (max-width: 990px) {
+  .cloud-tarif-item {
+    width: 48%;
+    margin-top: 10px;
+  }
+}
+
 .cloud-tarif-item__top {
   padding: 15px 0;
   color: #23355a;
   font-family: "Lato-Bold";
   font-size: 4.6875rem;
+}
+
+@media screen and (max-width: 990px) {
+  .cloud-tarif-item__top {
+    font-size: 2rem;
+  }
 }
 
 .cloud-tarif-item__top._tarif1 {
@@ -895,6 +918,12 @@ html, body {
   border-bottom: 1px solid #e8f2f8;
   font-family: "Lato-Light";
   font-size: 1.1875rem;
+}
+
+@media screen and (max-width: 990px) {
+  .cloud-tarif-item__bottom {
+    font-size: 1rem;
+  }
 }
 
 .contacts {
@@ -1274,11 +1303,34 @@ html, body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 990px) {
+  .host-about__list {
+    display: block;
+  }
+}
+
 .host-about__left {
   padding-right: 20px;
   color: #4e4e4e;
   font-size: 1.25rem;
   line-height: 1.875rem;
+}
+
+@media screen and (max-width: 990px) {
+  .host-about__left {
+    margin-top: 40px;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .host-about__right {
+    margin-top: 30px;
+  }
+  .host-about__right img {
+    width: 100%;
+  }
 }
 
 .host-advantages-list {
@@ -1293,6 +1345,13 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 990px) {
+  .host-advantages-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .host-advantages-list__item {
@@ -1322,6 +1381,12 @@ html, body {
   padding: 95px 0;
 }
 
+@media screen and (max-width: 990px) {
+  .host-top {
+    padding: 50px 0;
+  }
+}
+
 .host-top__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1334,6 +1399,12 @@ html, body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 990px) {
+  .host-top__wrapper {
+    display: block;
+  }
+}
+
 .host-top__title {
   position: relative;
   padding-left: 50px;
@@ -1342,6 +1413,14 @@ html, body {
   font-family: "Lato-Black";
   font-size: 3.75rem;
   line-height: 3.9375rem;
+}
+
+@media screen and (max-width: 990px) {
+  .host-top__title {
+    padding-left: 0;
+    text-align: center;
+    font-size: 2.5rem;
+  }
 }
 
 .host-top__title:before {
@@ -1354,6 +1433,18 @@ html, body {
   background: url(../images/general/rect-small-yellow.png) no-repeat;
 }
 
+@media screen and (max-width: 990px) {
+  .host-top__title:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .host-top__title br {
+    display: none;
+  }
+}
+
 .host-top__subtitle {
   position: absolute;
   bottom: -50px;
@@ -1363,6 +1454,14 @@ html, body {
   font-size: 1.6875rem;
 }
 
+@media screen and (max-width: 990px) {
+  .host-top__subtitle {
+    position: relative;
+    bottom: inherit;
+    left: 0;
+  }
+}
+
 .host-top__right {
   max-width: 560px;
   padding-right: 40px;
@@ -1370,6 +1469,15 @@ html, body {
   font-family: "Lato-Light";
   font-size: 1.6875rem;
   line-height: 1.8125rem;
+}
+
+@media screen and (max-width: 990px) {
+  .host-top__right {
+    max-width: 100%;
+    margin-top: 30px;
+    padding-right: 0;
+    text-align: center;
+  }
 }
 
 .ip-tarif {
@@ -1389,6 +1497,15 @@ html, body {
   color: #fff;
   font-size: 1.6875rem;
   line-height: 2.3125rem;
+}
+
+@media screen and (max-width: 990px) {
+  .ip-tarif__bottom {
+    max-width: 100%;
+    margin-top: 30px;
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
 }
 
 .ip-tarif__bottom:before, .ip-tarif__bottom:after {
@@ -1411,14 +1528,27 @@ html, body {
 }
 
 .table {
+  position: relative;
   width: 100%;
   margin-top: 37px;
   border-top: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
 }
 
+@media screen and (max-width: 990px) {
+  .table {
+    overflow-x: scroll;
+  }
+}
+
 .table table {
   width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  .table table {
+    width: 900px;
+  }
 }
 
 .table table thead tr {
@@ -1550,6 +1680,7 @@ html, body {
 
 .projects-block {
   position: relative;
+  overflow: hidden;
   box-sizing: border-box;
   width: 590px;
   min-height: 360px;
@@ -1562,6 +1693,7 @@ html, body {
 @media screen and (max-width: 1200px) {
   .projects-block {
     width: 47%;
+    padding: 40px 20px 0 20px;
   }
 }
 
@@ -1570,7 +1702,6 @@ html, body {
     width: 100%;
     min-height: auto;
     padding: 40px;
-    overflow: hidden;
   }
 }
 
@@ -1633,6 +1764,7 @@ html, body {
 @media screen and (max-width: 990px) {
   .projects-block__image {
     z-index: 1;
+    overflow: hidden;
   }
 }
 
@@ -1803,6 +1935,12 @@ html, body {
   background-size: cover;
 }
 
+@media screen and (max-width: 990px) {
+  .top-baner {
+    overflow: hidden;
+  }
+}
+
 .top-baner._host {
   min-height: auto;
   min-height: 170px;
@@ -1939,6 +2077,12 @@ html, body {
   background-color: #0248a0;
   font-size: 1.0625rem;
   line-height: 46px;
+}
+
+@media screen and (max-width: 990px) {
+  .top-baner-switcher__item {
+    margin-right: 0;
+  }
 }
 
 .top-baner-switcher__item:hover {

@@ -10,6 +10,9 @@
 
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 990px) {
+      display: block;
+    }
   }
   &__left {
     padding-right: 20px;
@@ -18,5 +21,19 @@
 
     font-size: rem-calc(20);
     line-height: rem-calc(30);
+    @media screen and (max-width: 990px) {
+      margin-top: 40px;
+      padding-right: 0;
+
+      text-align: center;
+    }
+  }
+  &__right {
+    @media screen and (max-width: 990px) {
+      margin-top: 30px;
+      img {
+        width: 100%;
+      }
+    }
   }
 }

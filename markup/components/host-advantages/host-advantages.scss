@@ -12,6 +12,9 @@
 
   align-items: flex-start;
   justify-content: space-between;
+  @media screen and (max-width: 990px) {
+    flex-wrap: wrap;
+  }
   &__item {
     position: relative;
 

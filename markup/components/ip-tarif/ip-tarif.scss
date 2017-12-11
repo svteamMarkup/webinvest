@@ -21,6 +21,13 @@
 
     font-size: rem-calc(27);
     line-height: rem-calc(37);
+    @media screen and (max-width: 990px) {
+      max-width: 100%;
+      margin-top: 30px;
+
+      font-size: rem-calc(22);
+      line-height: rem-calc(32);
+    }
     &:before,
     &:after {
       position: absolute;
@@ -43,13 +50,21 @@
 }
 
 .table {
+  position: relative;
+
   width: 100%;
   margin-top: 37px;
 
   border-top: 1px solid rgba($white, .6);
   box-shadow: 0 0 10px rgba($black, .14);
+  @media screen and (max-width: 990px) {
+    overflow-x: scroll;
+  }
   table {
     width: 100%;
+    @media screen and (max-width: 990px) {
+      width: 900px;
+    }
     thead {
       tr {
         background: #69add5;

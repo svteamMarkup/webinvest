@@ -5,6 +5,9 @@
 
   background: url(%=static=%general/top-baner.jpg) no-repeat;
   background-size: cover;
+  @media screen and (max-width: 990px) {
+    overflow: hidden;
+  }
   &._host {
     min-height: auto;
     min-height: 170px;
@@ -117,6 +120,9 @@
 
     font-size: rem-calc(17);
     line-height: 46px;
+    @media screen and (max-width: 990px) {
+      margin-right: 0;
+    }
     &:hover {
       text-decoration: none;
     }
